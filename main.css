@@ -1,0 +1,162 @@
+:root {
+  --navy-blue: #050878ff;
+  --navy-blue-2: #050169ff;
+  --engineering-orange: #c40106ff;
+  --navy-blue-3: #020065ff;
+  --jonquil: #f5c60cff;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+#hero {
+  background-image: url("images/kl1.avif");
+  display: flex;
+  /* align-items: center; */
+  /* text-align: center; */
+  flex-direction: column;
+
+  background-size: cover;
+  /* background-position: 0 -50px; */
+  /* We can use the above for positioning the image details  */
+  background-position: center center;
+
+  /* padding: 38px 0 40px 0; */
+  /* height: 60vh; */
+}
+
+#hero-section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  line-height: 37px;
+  color: #ffffff;
+  margin-top: 120px;
+  text-shadow: 0px 0px 5px black;
+}
+
+#hero-section-text h1 {
+  /* background-color: #1d3557; */
+  background-color: var(--navy-blue-3);
+  border-radius: 10px;
+  padding: 3px 12px 5px 12px;
+}
+
+#hero-section-text h2 {
+  width: 470px;
+  background-color: #457b9d;
+  border-radius: 10px;
+  padding: 5px 29px 8px 28px;
+  margin-bottom: 200px;
+}
+
+#activities {
+  background-color: #f1faee;
+  margin: 0;
+  padding: 30px 0 60px 0;
+}
+
+#activities h2 {
+  font-size: 36px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  color: #1d3557;
+}
+
+#all-sights {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.sight {
+  width: 270px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.sight h3 {
+  font-weight: 700;
+  font-size: 25px;
+  /* line-height: 18px; */
+  color: #1d3557;
+  width: 240px;
+  margin: 15px auto;
+}
+
+.sight p {
+  /* text-align: center; */
+  width: 250px;
+  margin: 0 auto;
+  text-shadow: -1px 0 gainsboro;
+  font-size: 15px;
+}
+
+.sight-img {
+  border: 2px groove rgb(146, 146, 146);
+  border-radius: 50%;
+
+  transition: 0.3s transform;
+  cursor: pointer;
+}
+
+.sight:hover .sight-img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Card  */
+section.card {
+  /* background-color: #a8dadc; */
+  background-color: #fafdf6;
+  box-shadow: 0px 6px 0px var(--jonquil);
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+
+  display: flex;
+  gap: 25px;
+  width: 500px;
+  margin: 80px auto;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+section.card img {
+  width: 180px;
+  height: 248.67px;
+
+  border-radius: 10px;
+}
+
+.card-text h3 {
+  font-size: 24px;
+}
+
+.card-text p {
+  width: 189px;
+  margin: 0 auto;
+}
+
+.card .personal-img {
+  object-fit: cover;
+}
+
+footer {
+  color: gainsboro;
+  font-size: 16px;
+  margin: 0px auto 20px;
+}

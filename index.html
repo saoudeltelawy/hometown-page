@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Hometown - Homepage</title>
+  </head>
+  <body>
+    <!-- HERO Section -->
+
+    <header id="hero">
+      <div id="hero-section-text">
+        <h1>Visit Malaysia</h1>
+        <h2>
+          Malaysia's eclectic capital will keep you intrigued, from its modern
+          Twin Towers to the colorful Hindu Batu Caves.
+        </h2>
+      </div>
+    </header>
+    <!-- Activities Section  -->
+    <section id="activities">
+      <h2>Top three activities to do at Kuala Lumpur</h2>
+      <div id="all-sights">
+        <div class="sight">
+          <img src="images/batu2.jpeg" class="sight-img" />
+          <h3>Batu Caves Half-Day Tour</h3>
+          <p>
+            Explore Kuala Lumpur's beautiful countryside. Discover the Batu
+            Caves, Batik Factory, Hindu temple and take in a fantastic view of
+            the city.
+          </p>
+        </div>
+
+        <div class="sight">
+          <img src="images/petronas.jpeg" class="sight-img" />
+          <h3>Petronas Towers e-Tickets</h3>
+          <p>
+            Skip the lines at the Petronas Twin Towers observation deck and
+            marvel at the panoramic Kuala Lumpur views. Enjoy convenient hotel
+            ticket delivery.
+          </p>
+        </div>
+
+        <div class="sight">
+          <img src="images/kl-tower.jpeg" class="sight-img" />
+          <h3>KL Tower Admission Ticket</h3>
+          <p>
+            Enjoy sweeping views over Kuala Lumpur from the KL Tower Observation
+            Deck. Admire 360-degree views and watch a film in the multisensory
+            XD Theatre at your own expense, or upgrade your ticket to include
+            the Sky Deck.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guide Section -->
+
+    <section class="card">
+      <div class="card-img">
+        <img src="images/saud2.jpeg" alt="" class="personal-img" />
+      </div>
+      <div class="card-text">
+        <h3>Your guide</h3>
+        <p>
+          "I can express my admiration for this country and all the pearls it
+          has because I have lived in Kuala Lumpur for more than three months."
+        </p>
+        <h4>Saoud ElTelawy</h4>
+      </div>
+    </section>
+    <footer>
+      Copyright &copy; Saoud ElTelawy. All rights reserved
+      <span id="current-year"></span>
+    </footer>
+    <script>
+      const d = new Date();
+      let year = d.getFullYear();
+      document.getElementById("current-year").innerText = year;
+    </script>
+  </body>
+</html>
